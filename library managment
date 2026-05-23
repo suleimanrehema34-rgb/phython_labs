@@ -1,0 +1,25 @@
+books = []
+
+while True:
+    print("\n1. Add book")
+    print("2. Show books")
+    print("3. Exit")
+
+    c = input("Chagua: ")
+
+    match c:
+
+        case "1":
+            books.append(input("Book name: "))
+            print("Added")
+
+        case "2":
+            print("Books:")
+            for b in books:
+                print(b)
+
+        case "3":
+            break
+
+        case _:
+            print("Wrong choice")
